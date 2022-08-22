@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+    <script defer src="https://unpkg.com/alpinejs@3.3.4/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@400;600&display=swap" rel="stylesheet">
+   <title>YTL Corporate Wesbite</title>
+</head>
+
+<body>
+<!--Header-->
+    <header x-data="{ navShow : false }" @scroll.window="navShow = window.scrollY > 100 ? true : false ">
+        <nav class="navbar header navbar-expand-lg fixed-top" :class="{ 'header-scrolled' : navShow }">
+            <div class="container">
+              <a class="navbar-brand fw-bold fs-3 text-primary" href="#">TYL Corporate</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link" href="#">
+                      Dropdown
+                    </a>
+                    
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">Disabled</a>
+                  </li>
+                </ul>
+                
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <!--intro-->
+    <section class="intro d-flex align-items-center">
+        <div class="container mt-5 mt-lg-0">
+            <div class="row align-items-center gx-12">
+                <div class="col-md-6">
+                    <img class="img-fluid" src="./images/intro/intro-img.png">
+                    
+                </div>
+                <div class="col-md-6 px-5">
+                   <h2 class="fw-bold text-primary" data-aos="fade-in" data-aos-duration="500" >Where does it come from?</h2>
+                    <h5 class="text-muted mt-3" data-aos="fade-up" data-aos-delay="200" data-aos-duration="500">The standard Lorem Ipsum passage, used since the 1500s
+                    </h5>
+                    <button class="btn btn-lg btn-primary mt-5 hover-grow" data-aos="fade-up"
+                    data-aos-delay="300">Explore More</button>
+                    
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!--About-->
+    <section>
+        <div class="container my-5">
+            <div class="row gx-0 align-items-center">
+                <div class="col-lg-6" data-aos="fade-down" data-aos-duration="1000"
+                data-aos-easing="ease-in-out">
+                   <div class="content">
+                         <h3 class="fw-bold text-primary">Where does it come from?</h2>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+                        <button class="btn btn-primary mt-3 hover-grow">Read more</button>
+                   </div>
+                   
+                </div>
+                <div class="col-lg-6" data-aos="zoom-in" data-aos-duration="1000"
+                data-aos-easing="ease-in-out">
+                   
+                    <img class="img-fluid" src="./images/about/about.jpg">
+                    
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    
+    <!--Values-->
+    <section class="py-3">
+      <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="fw-bold text-primary">What are our values?
+                </h2>
+                <h5 class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                </h5>
+            </div>
+          </div>
+        
+        <div class="row g-3 mt-3">  
+            <div class="col-md-4" data-aos="fade-up" data-aos-duration="500"
+            data-aos-easing="ease-in-out">
+            <div class="card" >
+              <img class="card-img-top" src="images/values/1.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Our value</h5>
+                <p class="card-text">Standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <a href="#" class="btn btn-primary">more</a>
+              </div>
+            </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-duration="500"
+            data-aos-easing="ease-in-out">
+              <div class="card" >
+                <img class="card-img-top" src="images/values/2.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Our value</h5>
+                  <p class="card-text">Standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                  <a href="#" class="btn btn-primary">more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-duration="500"
+            data-aos-easing="ease-in-out">
+              <div class="card">
+                <img class="card-img-top" src="images/values/3.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Our value</h5>
+                  <p class="card-text">Standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                  <a href="#" class="btn btn-primary">more</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+      </div>
+
+    </section>
+
+
+
+<!--Features-->
+<section class="feature py-5">
+  <div class="container">
+      <div class="row">
+        <h3 class="mb-5 text-primary">Our Special Features</h3>
+      </div>
+      <div class="row align-items-center" data-aos="fade-up"
+      data-aos-duration="1000">
+        <div class="col-lg-4">
+          <img class="img-fluid me-4" src="./images/features/1.png">
+        </div>
+        <div class="col-lg-8">
+          <div class="row g-3 mt-4">
+            <div class="col-md-6">
+                <div class="d-flex">
+                  <i class="bi bi-envelope-fill me-3"></i>
+                  <div class="pt-3">
+                    <h5>Main Feature</h5>
+                    <p class="text-muted">
+                      Standard dummy text ever since the 1500s, when an unknown printer took
+                    </p>
+                  </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="d-flex">
+                <i class="bi bi-stack me-3"></i>
+                <div class="pt-3">
+                  <h5>Main Feature</h5>
+                  <p class="text-muted">
+                    Standard dummy text ever since the 1500s, when an unknown printer took  
+                  </p>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="d-flex">
+              <i class="bi bi-credit-card-2-front-fill me-3"></i>
+              <div class="pt-3">
+                <h5>Main Feature</h5>
+                <p class="text-muted">
+                  Standard dummy text ever since the 1500s, when an unknown printer took 
+                </p>
+              </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="d-flex">
+            <i class="bi bi-cloud-check-fill me-3"></i>
+             <div class="pt-3">
+              <h5>Main Feature</h5>
+              <p class="text-muted">
+                Standard dummy text ever since the 1500s, when an unknown printer took
+              </p>
+            </div>
+          </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="d-flex">
+          <i class="bi bi-folder-fill me-3"></i>
+          <div class="pt-3">
+            <h5>Main Feature</h5>
+            <p class="text-muted">
+              Standard dummy text ever since the 1500s, when an unknown printer took
+            </p>
+          </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="d-flex">
+        <i class="bi bi-file-earmark-code-fill me-3"></i>
+        <div class="pt-3">
+          <h5>Main Feature</h5>
+          <p class="text-muted">
+            Standard dummy text ever since the 1500s, when an unknown printer took
+          </p>
+        </div>
+      </div>
+  </div>
+
+           
+          </div>
+        </div>
+      </div>
+
+  </div>
+</section>
+
+
+<!--Counter-->
+<section class="count mb-3">
+  <div class="container">
+
+      <div class="row g-3" data-aos="fade-left" data-aos-duration="500">
+        <div class="col-lg-3 col-md-6">
+          <div class="d-flex align-items-center justify-content-center p-3 rounded border">
+            <i class="bi bi-cast me-3"></i>
+            <div class="pt-3">
+              <span data-purecounter-start="0" data-purecounter-end="5000" class="purecounter">0</span>
+              <p>Our Projects</p>
+          </div>
+        </div>
+      </div>
+
+        <div class="col-lg-3 col-md-6">
+            <div class="d-flex align-items-center justify-content-center p-3 rounded border">
+              <i class="bi bi-people-fill me-3"></i>
+              <div class="pt-3">
+                  <span data-purecounter-start="0" data-purecounter-end="11000" class="purecounter">0</span>
+                  <p>Our Customers</p>
+              </div>
+           </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="d-flex align-items-center justify-content-center rounded border p-3">
+            <i class="bi bi-person-video3 me-3"></i>
+            <div class="pt-3">
+              <span data-purecounter-start="0" data-purecounter-end="3000" class="purecounter">0</span>
+              <p>Our People</p>
+          </div>
+          </div>
+        </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="d-flex align-items-center justify-content-center rounded border p-3">
+
+            <i class="bi bi-award me-3"></i>
+            <div class="pt-3">
+              <span data-purecounter-start="0" data-purecounter-end="5600" class="purecounter">0</span>
+              <p>Our Ranks</p>
+          </div>
+            </div>
+         </div>
+
+      </div>
+  </div>
+
+</section>
+
+
+<!--Pricing-->
+<section class="pricing py-5">
+    <div class="container">
+      <div class="row mb-4">
+        <h3 class="text-primary">Packages & Pricing</h3>
+        <p>Choose what's best for your business in long term</p>
+      </div>
+      <div class="row text-center mb-3 gy-3" data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom">
+        <div class="col-md-6 col-lg-3">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="pack-blue">Package1</h4>
+              <span>Starts from 11<sup>$</sup></span>
+              <img class="img-fluid p-4" src="./images/pricing/1.png">
+              <ul class="list-unstyled">
+                <li>Unlimited space</li>
+                <li>12 months grantee</li>
+                <li>Free host & domain</li>
+                <li>Non-refundable</li>
+                <li>24h support</li>
+              </ul>
+              <button class="btn btn-outline-primary my-3">add to card</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="pack-green">Package2</h4>
+              <span>Starts from 11<sup>$</sup></span>
+              <img class="img-fluid p-4" src="./images/pricing/2.png">
+              <ul class="list-unstyled">
+                <li>Unlimited space</li>
+                <li>12 months grantee</li>
+                <li>Free host & domain</li>
+                <li>Non-refundable</li>
+                <li>24h support</li>
+              </ul>
+              <button class="btn btn-outline-primary my-3">add to card</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="pack-orange">Package3</h4>
+              <span>Starts from 11<sup>$</sup></span>
+              <img class="img-fluid p-4" src="./images/pricing/3.png">
+              <ul class="list-unstyled">
+                <li>Unlimited space</li>
+                <li>12 months grantee</li>
+                <li>Free host & domain</li>
+                <li>Non-refundable</li>
+                <li>24h support</li>
+              </ul>
+              <button class="btn btn-outline-primary my-3">add to card</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="pack-pink">Package4</h4>
+              <span>Starts from 11<sup>$</sup></span>
+              <img class="img-fluid p-4" src="./images/pricing/4.png">
+              <ul class="list-unstyled">
+                <li>Unlimited space</li>
+                <li>12 months grantee</li>
+                <li>Free host & domain</li>
+                <li>Non-refundable</li>
+                <li>24h support</li>
+              </ul>
+              <button class="btn btn-outline-primary my-3">add to card</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<!--Contact Us-->
+<section class="contact py-5">
+  <div class="container">
+      <div class="row mb-4">
+        <h3 class="text-primary">Contact Us</h3>
+      </div>
+      <div class="row gy-4" data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom">
+        <div class="col-lg-6">
+          <div class="row gy-4">
+            <div class="col-md-6">
+              <div class="info-box">
+                <i class="bi bi-geo-alt"></i>
+                <h5>Adress</h5>
+                <p>F-3A-36, KL Gateway Premium Residence</p>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="info-box">
+                <i class="bi bi-telephone"></i>
+                <h5>Phone</h5>
+                <p>+601161780501<br>+601161780689</p>
+              </div>
+            </div>
+          </div>
+          <div class="row gy-4">
+            <div class="col-md-6 ">
+              <div class="info-box">
+                <i class="bi bi-envelope"></i>
+                <h5>Email</h5>
+                <p>pega.pasha@gmail.com</p>
+              <br>
+              </div>
+            </div>
+            <div class="col-md-6 ">
+              <div class="info-box">
+                <i class="bi bi-clock"></i>
+                <h5>Support</h5>
+                <p>24 hours support</p>
+                <br>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <form class="contact-form">
+            <div class="row gy-4">
+                    <div class="col-md-6">
+                      <label class="form-lable">Name</label>
+                      <input type="text" class="form-control">
+                    </div>
+
+                    <div class="col-md-6">
+                      <label class="form-lable">Email</label>
+                      <input type="email" class="form-control">
+                    </div>
+                  
+                    <div class="col-md-12">
+                      <label class="form-lable">Subject</label>
+                      <input type="text" class="form-control">
+                    </div>
+
+                    <div class="col-md-12">
+                      <label class="form-lable">Messege</label>
+                      <textarea class="form-control" type="text" rows="2"></textarea>
+                    </div>
+                    
+                    <div class="col-md-12">
+                      <button class="btn btn-primary">Submit</button>
+                    </div>
+            
+           </div>
+          </from>
+        </div>
+      </div>
+  </div>
+</section>  
+
+
+<footer id="footer" class="pt-5">
+  <div class="container">
+    <div class="row gy-4">
+
+      <div class="col-lg-6">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-6">
+            <h5>About Us</h5>
+            <ul class="list-unstyled lh-lg">
+              <li>About YTL Corporation</li>
+              <li>Financial Reports</li>
+              <li>Awards</li>
+              <li>Governance</li>
+              <li>Careers</li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-6">
+            <h5>Services</h5>
+            <ul class="list-unstyled lh-lg">
+              <li>Cement Manufacturing</li>
+              <li>Construction Contracting</li>
+              <li>Property Development</li>
+              <li>Governance</li>
+              <li>Careers</li>
+            </ul>
+          </div>
+
+        <div class="col-lg-4 col-6">
+          <h5>Services</h5>
+          <ul class="list-unstyled lh-lg">
+            <li>Cement Manufacturing</li>
+            <li>Construction Contracting</li>
+            <li>Property Development</li>
+            <li>Governance</li>
+            <li>Careers</li>
+          </ul>
+        </div>
+
+        </div>
+        </div>
+
+
+      <div class="col-lg-5 offset-md-1">
+        <h4>Keep in Touch</h4>
+        <p>Standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <div class="social-links my-5" data-aos="fade-left" data-aos-duration="100">
+          <a href="#" class="mx-2"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="mx-2"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="mx-2"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="mx-2"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+
+    </div>
+    <div class="row">
+      <p class="pt-4 copyright"> 
+        Copyright © 2022 Corporation Berhad
+        All rights reserved</p>
+    </div>
+  </div>
+</footer>
+
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+<script>
+  new PureCounter();
+</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+
+</body>
+</html>

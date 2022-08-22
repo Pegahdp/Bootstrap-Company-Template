@@ -1,0 +1,144 @@
+
+html, body{
+    font-family: 'Signika Negative', sans-serif
+}
+
+.header{
+    transition:all 0.5s;
+    padding: 20px 0;
+}
+
+
+@media (max-width:992px){
+    .header{
+        background-color: #fff;
+    }
+
+}
+
+
+
+.header-scrolled {
+    background-color: #fff;
+    box-shadow: 0px 2px 20px rgb(1 41 112 / 10%);
+}
+
+
+.intro{
+    height: 100vh;
+    width: 100%;
+    background: url('../images/intro/intro-bg.png') top center;
+    background-size: cover;
+}
+
+
+.hover-grow{
+transition: all 0.5s;
+}
+
+.hover-grow:hover:hover{
+    transform: scale(1.1);
+}
+
+
+
+.content{
+    background-color: #f6f9ff;
+    padding: 40px;
+}
+
+.count i{
+    font-size: 42px;
+    color: #4154f1;
+}
+
+.feature i{
+    font-size: 42px;
+    color: #4154f1;
+}
+
+
+.card-img-top{
+    padding:20px
+}
+
+/*Pricing sec*/
+.pack-blue{
+    color: #07d5c0
+}
+
+.pack-green{
+    color: #65c600
+}
+
+.pack-orange{
+
+    color: #ff901c
+}
+
+.pack-pink{
+    color: #ff0071
+}
+
+.pricing .card {
+    transition: all 0.8s;
+}
+
+.pricing .card:hover{
+    transform: scale(1.1);
+}
+
+
+/*Contact*/
+
+.contact .info-box{
+    background-color: #fafbff;
+    padding: 20px;
+    
+}
+
+.contact .info-box i{
+    color: #4154f1;
+    font-size: 30px;
+    line-height: 0;
+}
+
+.contact .info-box h5{
+    margin-top: 5px;
+}
+
+.contact-form{
+    background-color: #fafbff;
+    padding: 30px;
+    height: 97%;
+   
+}
+
+#footer h5{
+    font-size: 1.25rem;
+    border-bottom: 2px solid #6c757d;
+    padding-bottom: 7px;
+    width: 80%;
+}
+
+#footer{
+    background-color: #0b1137;
+    color: antiquewhite;
+    min-height: 300px;
+}
+
+.social-links i{
+    color: #fff;
+    font-size: 25px;
+    transition: all .2s ease-in-out;
+}
+
+
+.social-links i:hover {
+        color: #ff54a1;
+        transform: rotate(360deg)
+}
+
+.copyright{
+    font-size: 13px;
+}
